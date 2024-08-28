@@ -1,0 +1,77 @@
+#login{
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    height: 80svh;
+    width: 100%;
+    z-index: 99999999;
+}
+
+#login > form {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    gap: 50px;
+    /* background-image: url("https://img.freepik.com/foto-gratis/colorido-collage-punk-rock_23-2150072270.jpg"); */
+    z-index: 99999999;
+}
+
+
+
+#login input {
+    border-radius: 20px;
+    padding: 20px;
+    border: none;
+    background-color: #f9f9f9;
+    z-index: 99999999;
+}
+
+#login button {
+    background-color: #f9f9f9;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    border-radius: 20px;
+    z-index: 99999999;
+}
+
+.divFondo{
+    height: 10000px;
+    width: 10000px;
+}
+
+.divImg{
+    position: absolute;
+    left: 0;
+    top: 180px;
+    width: 50%;
+    height: 80.5svh;
+    overflow: hidden;
+}
+
+.imgDreams{
+    min-width: 100%;
+    min-height: 80svh;
+    overflow: hidden;
+    mask-image: linear-gradient(to right, rgb(0, 0, 0) 80%, transparent 110%);
+}
+
+.divNinos{
+    position: absolute;
+    right: 0;
+    top: 180px;
+    width: 50%;
+    height: 80.5svh;
+    overflow: hidden;
+}
+
+.imgNinos{
+    min-width: 100%;
+    min-height: 80svh;
+    overflow: hidden;
+    mask-image: linear-gradient(to left, rgb(0, 0, 0) 80%, transparent 110%);
+}

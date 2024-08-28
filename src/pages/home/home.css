@@ -1,0 +1,53 @@
+.divEventos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.divEvento{
+    background-image: url("https://i.pinimg.com/564x/f3/b6/d8/f3b6d8bd72b6ab6392bb1bd0c813d2b1.jpg");
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 350px;
+    width: 300px;
+    gap: 10px;
+    border-radius: 10px;
+    color: rgb(1, 2, 3);
+    text-shadow: 0 0 5px #ffffff82, 0 0 10px #ffffff76, 0 0 15px #fff, 0 0 20px #ff00ff89, 0 0 25px #ff00ff60, 0 0 30px #ff00ff67, 0 0 35px #ff00ff53;
+    padding-top: 10px;
+    box-shadow: 4px 10px 5px 0px rgba(0,0,0,0.75);
+    transition: all 0.5s ease;
+    z-index: 9999999999999999;
+    cursor: pointer;
+}
+
+.divEvento:hover{
+    scale: 1.1;
+}
+
+.divEvento > img{
+    max-height: 200px;
+    width: 100%;
+}
+
+.divMusic{
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    rotate: -30deg;
+    top: 500px;
+    left: -100px;
+    z-index: 9999999;
+}
+
+.imgMusic{
+    height: 1000px;
+    width: 1000px;
+}
