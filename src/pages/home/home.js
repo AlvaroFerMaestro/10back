@@ -33,16 +33,28 @@ const pintarEventos = (eventos, elementoPadre) => {
     const img = document.createElement("img");
     const descripcion = document.createElement("p")
     const precio = document.createElement("p");
+    const botonComprar = document.createElement("button");
+    const divByP = document.createElement("div")
     const like = document.createElement("img")
     // COLOCAR EL LIKE EN LOS EVENTOS 1:23  DE LA CALSE 2
 
     divEvento.className = "divEvento";
+    divByP.className = "divByP"
+    botonComprar.className = "botoncomprar"
+    botonComprar.textContent = "Comprar"
     titulo.textContent = evento.titulo;
     img.src = evento.imagen
     descripcion.textContent = evento.descripcion;
     precio.textContent = `${evento.precio}€`
 
-    divEvento.append(titulo, img, descripcion, precio);
+    // Añadir evento click al botón
+  botonComprar.addEventListener("click", () => {
+    // Redirigir a la página de compra (cambia la URL según tu necesidad)
+    window.location.href = `http://localhost:3000/compra/${tucktuck.js}`;
+  });
+
+    divByP.append(botonComprar, precio)
+    divEvento.append(titulo, img, descripcion, divByP)
     divEventos.append(divEvento)
     
     
